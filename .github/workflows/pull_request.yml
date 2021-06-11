@@ -1,0 +1,30 @@
+name: 'pull_request'
+on: [pull_request, pull_request_target]
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo GITHUB_EVENT_NAME: $GITHUB_EVENT_NAME
+          echo GITHUB_ACTOR: $GITHUB_ACTOR
+          echo GITHUB_REPOSITORY: $GITHUB_REPOSITORY
+          echo GITHUB_REPOSITORY_OWNER: $GITHUB_REPOSITORY_OWNER
+          echo GITHUB_SHA: $GITHUB_SHA
+          echo GITHUB_REF: $GITHUB_REF
+
+          echo GITHUB_HEAD_REF: $GITHUB_HEAD_REF
+          echo GITHUB_BASE_REF: $GITHUB_BASE_REF
+          
+          echo github.pull_request.owner: ${{ github.pull_request.owner }}
+          echo github.pull_request.repo: ${{ github.pull_request.repo }}
+          
+          echo github.pull_request.head.label: ${{ github.pull_request.head.label }}
+          echo github.pull_request.head.ref: ${{ github.pull_request.head.ref }}
+          echo github.pull_request.head.repo.full_name: ${{ github.pull_request.head.repo.full_name }}
+          echo github.pull_request.head.repo.owner.login: ${{ github.pull_request.head.repo.owner.login }}
+
+          echo github.pull_request.base.label: ${{ github.pull_request.base.label }}
+          echo github.pull_request.base.ref: ${{ github.pull_request.base.ref }}
+          echo github.pull_request.base.repo.full_name: ${{ github.pull_request.base.repo.full_name }}
+          echo github.pull_request.base.repo.owner.login: ${{ github.pull_request.base.repo.owner.login }}
