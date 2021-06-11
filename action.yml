@@ -1,0 +1,6 @@
+name: GitHub Debug Action
+description: GitHub Action for debugging
+
+runs:
+  main: index.js
+  using: node12
