@@ -15,15 +15,15 @@ jobs:
           echo GITHUB_HEAD_REF: $GITHUB_HEAD_REF
           echo GITHUB_BASE_REF: $GITHUB_BASE_REF
           
-          echo pull_request.owner: ${{ pull_request.owner }}
-          echo pull_request.repo: ${{ pull_request.repo }}
+          echo github.pull_request.owner: ${{ github.pull_request.owner }}
+          echo github.pull_request.repo: ${{ github.pull_request.repo }}
           
-          echo pull_request.head.label: ${{ pull_request.head.label }}
-          echo pull_request.head.ref: ${{ pull_request.head.ref }}
-          echo pull_request.head.repo.full_name: ${{ pull_request.head.repo.full_name }}
-          echo pull_request.head.repo.owner.login: ${{ pull_request.head.repo.owner.login }}
+          echo github.pull_request.head.label: ${{ github.pull_request.head.label }}
+          echo github.pull_request.head.ref: ${{ github.pull_request.head.ref }}
+          echo github.pull_request.head.repo.full_name: ${{ github.pull_request.head.repo.full_name }}
+          echo github.pull_request.head.repo.owner.login: ${{ github.pull_request.head.repo.owner.login }}
 
-          echo pull_request.base.label: ${{ pull_request.base.label }}
-          echo pull_request.base.ref: ${{ pull_request.base.ref }}
-          echo pull_request.base.repo.full_name: ${{ pull_request.base.repo.full_name }}
-          echo pull_request.base.repo.owner.login: ${{ pull_request.base.repo.owner.login }}
+          echo github.pull_request.base.label: ${{ github.pull_request.base.label }}
+          echo github.pull_request.base.ref: ${{ github.pull_request.base.ref }}
+          echo github.pull_request.base.repo.full_name: ${{ github.pull_request.base.repo.full_name }}
+          echo github.pull_request.base.repo.owner.login: ${{ github.pull_request.base.repo.owner.login }}
