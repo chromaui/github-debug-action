@@ -1,3 +1,3 @@
 const { context } = require('@actions/github');
 
-console.log(context);
+console.log(JSON.stringify(context.payload, null, 2));
