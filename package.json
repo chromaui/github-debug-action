@@ -1,0 +1,12 @@
+{
+  "name": "github-debug-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:chromaui/github-debug-action.git",
+  "author": "Gert Hengeveld <info@ghengeveld.nl>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0"
+  }
+}
