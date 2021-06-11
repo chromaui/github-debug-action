@@ -12,8 +12,3 @@ jobs:
           echo GITHUB_REPOSITORY_OWNER: $GITHUB_REPOSITORY_OWNER
           echo GITHUB_SHA: $GITHUB_SHA
           echo GITHUB_REF: $GITHUB_REF
-          echo GITHUB_HEAD_REF: $GITHUB_HEAD_REF
-          echo GITHUB_BASE_REF: $GITHUB_BASE_REF
-
-          echo github.pull_request.owner: ${{ github.pull_request.owner }}
-          echo github.pull_request.repo: ${{ github.pull_request.repo }}
